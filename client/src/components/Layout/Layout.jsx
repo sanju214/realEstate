@@ -23,6 +23,7 @@ const Layout = () => {
 
   useEffect(() => {
     const getTokenAndRegsiter = async () => {
+      console.log("gettoken");
       const res = await getAccessTokenWithPopup({
         authorizationParams: {
           audience: "http://10.5.41.22:8000",
